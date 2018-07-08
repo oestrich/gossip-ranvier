@@ -28,4 +28,20 @@ You can add new channels by creating more `GossipChannel` objects. They will aut
 
 Note that remote channel names are validated before subscribing. They must be a single word of letters only and a maximum of 15 characters.
 
+## Fake Player
+
+In order for messages to be broadcast into your game, the bundle makes a fake player object as follows:
+
+```javascript
+let player = {
+  isGossip: true,
+  name: "player@RemoteGame",
+  getBroadcastTargets: () => {
+    return [];
+  }
+};
+```
+
+Make sure this works for your game and extend as needed.
+
 [gossip]: https://gossip.haus/
