@@ -14,8 +14,8 @@ To enable:
 {
   "gossip": {
     "url": "wss://gossip.haus/socket",
-    "clientId": "client id",
-    "clientSecret": "client secret",
+    "clientId": "CHANGE ME",
+    "clientSecret": "CHANGE ME",
     "channels": {
       "gossip": "gossip"
     }
