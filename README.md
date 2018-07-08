@@ -22,4 +22,10 @@ To enable:
 
 The channels configuration key is set up as an object with the remote channel as the key, and the local channel as the value.
 
+## Adding new channels
+
+You can add new channels by creating more `GossipChannel` objects. They will automatically be detected and join the network.
+
+Note that remote channel names are validated before subscribing. They must be a single word of letters only and a maximum of 15 characters.
+
 [gossip]: https://gossip.haus/
