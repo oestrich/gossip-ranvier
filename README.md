@@ -56,4 +56,8 @@ let player = {
 
 Make sure this works for your game and extend as needed.
 
+## Sign In/Sign Out
+
+In your fork of Ranvier, you will need to emit the `spawn` event on your player characters when they sign into the game, and you will also need to emit the `quit` event when they quit the game, if you want to take advantage of Gossip's sign in/sign out messaging.
+
 [gossip]: https://gossip.haus/
