@@ -28,18 +28,6 @@ You can add new channels by creating more `GossipChannel` objects. They will aut
 
 Note that remote channel names are validated before subscribing. They must be a single word of letters only and a maximum of 15 characters.
 
-## Player Sign In/Out
-
-Gossip supports live updates of player status in your game. In order for this to work properly you must send these updates to the GossipEmitter.
-
-```javascript
-// On sign in
-state.GossipEmitter.emit("players/sign-in", player);
-
-// On sign out
-state.GossipEmitter.emit("players/sign-out", player);
-```
-
 ## Fake Player
 
 In order for messages to be broadcast into your game, the bundle makes a fake player object as follows:
