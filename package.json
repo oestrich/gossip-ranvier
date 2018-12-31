@@ -6,6 +6,6 @@
   "author": "Eric Oestrich <eric@oestrich.org>",
   "license": "MIT",
   "dependencies": {
-    "ws": "^3.1.0"
+    "ws": "^6.1.2"
   }
 }
